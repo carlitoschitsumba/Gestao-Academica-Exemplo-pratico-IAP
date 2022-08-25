@@ -4,7 +4,8 @@
 // DECLARACAO DAS FUNCOES
 
 void menu ();
-
+void est_estudante();
+void est_docente();
 
 
 void main ()
@@ -17,7 +18,9 @@ menu ();
 
     
 }
+// IMPLEMETACAO DE FUNCOES
 
+//IMPLEMENTACAO DA FUNCAO MENU
 void menu (){
 
 int opcao;
@@ -30,16 +33,34 @@ scanf ("%d",&opcao);
 switch (opcao)
 {
 case 1:
-  printf ("Escolheu o menu de estatistica de estudantes");
+// INVOCACAO DA FUNCAO DE ESTATISTICA DE ESTUDANTES
+  est_estudante();
   break;
 
 
 case 2:
-  printf("Escolheu o menu de estatistica dos docentes");
+// INVOCACAO DA FUNCAO DE ESTATISTICA DE DOCENTES
+  est_docente();
+break;
 default:
-printf ("Escolheu a opcao errada");
+printf ("Escolheu a opcao errada\n");
   break;
 }
+
+
+}
+
+//ESTATISTICA ESTUDANTES
+
+void est_estudante(){
+
+printf ("Chamou a funcao de estatistica de estudantes\n");
+}
+
+// ESTATISTICA DOCENTE
+
+void est_docente(){
+printf ("chamou a funcao da estatistica docente\n");
 
 
 }
