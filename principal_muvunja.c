@@ -53,7 +53,7 @@ printf ("Escolheu a opcao errada\n");
   //ESTATISTICA ESTUDANTES
 
 void est_estudante(){
-  char nome_curso [20], finalizar;
+  char nome_curso [50], finalizar;
   int nivel, contador=0;
   float media_estudante, soma_media=0, media_maior=0, media_menor=0;
 
@@ -102,7 +102,7 @@ void est_estudante(){
 
 
     printf ("Finalizar o programa? s-Sim, n-Nao\n");
-    scanf("%c" ,&finalizar);
+    scanf("%s" ,&finalizar);
   }
 
   printf("Curso: %s, %d Ano\n", nome_curso, nivel);
