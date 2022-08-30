@@ -37,7 +37,7 @@ void menu(){
 }
 
 void est_estudante(){
-    char nome_curso[20];
+    char nome_curso[50];
     char finalizar;
     int nivel;
     int contador;
